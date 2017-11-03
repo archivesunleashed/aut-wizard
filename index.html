@@ -1,0 +1,41 @@
+<html>
+<head>
+  <script var exports={};
+  src="aut-form.js"></script>
+</head>
+<body>
+  <label> What would you like to collect: </label><br />
+  <select>
+    <option>plain text</option>
+    <option>domain frequencies</option>
+    <option>hyper-link network</option>
+    <option>
+  </select>
+  <br /><br />
+  <label> What collections would you like to apply this to? </label><br />
+  <select>
+    <option> Collection A </option>
+    <option> Collection B </option>
+    <option> Collection C </option>
+  </select>
+  <br /><br />
+  <div id="filters">
+  <button name="add filter" id="filter" value="add filter" onclick="addFilter(value)">add filter</button>
+  <select>
+    <option> by domain </option>
+    <option> by date </option>
+    <option> by url pattern </option>
+    <option> by language </option>
+    <option> keyword </option>
+    <option> remove boilerplate </option>
+  </select><br /><br />
+  </div>
+  <label> In what format would you like your output: </label><br />
+  <select>
+    <option> json </option>
+    <option> csv </option>
+    <option> gexf </option>
+  </select><br /><br />
+  <br />
+  <input type="submit"> </input>
+</body>
