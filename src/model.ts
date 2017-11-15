@@ -37,4 +37,4 @@ interface Script {
   bypassScript: Boolean,
 }
 
-export {Script, Institution, Filter, Aggregation, OutputFormat, Collection}
+export {Script, OutputFormat, Aggregation, Filter, OutputType, Collection, Institution}

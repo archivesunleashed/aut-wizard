@@ -1,15 +1,15 @@
 "use strict";
-var Template = (function () {
+var Template = /** @class */ (function () {
     function Template() {
     }
     return Template;
 }());
-var AutForm = (function () {
+var AutForm = /** @class */ (function () {
     function AutForm(institution) {
         var _this = this;
         this.institution = institution;
         var btn = document.getElementById("filter");
-        btn.addEventListener("click", function (e) { return _this.addFilter(e); });
+        btn.addEventListener("click", function (e) { return _this.addFilter("remove boilerplate"); });
     }
     AutForm.prototype.addFilter = function (event) {
         switch (event) {
@@ -32,3 +32,5 @@ var AutForm = (function () {
     return AutForm;
 }());
 ;
+module.exports = AutForm;
+//# sourceMappingURL=aut-form.js.map

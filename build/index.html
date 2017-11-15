@@ -1,7 +1,8 @@
 <html>
 <head>
-  <script var exports={};
-  src="aut-form.js"></script>
+  <script type="text/javascript"
+  src="aut-form.js">
+</script>
 </head>
 <body>
   <label> What would you like to collect: </label><br />
@@ -20,15 +21,15 @@
   </select>
   <br /><br />
   <div id="filters">
-  <button name="add filter" id="filter" value="add filter" onclick="addFilter(value)">add filter</button>
-  <select>
-    <option> by domain </option>
-    <option> by date </option>
-    <option> by url pattern </option>
-    <option> by language </option>
-    <option> keyword </option>
-    <option> remove boilerplate </option>
-  </select><br /><br />
+  <button id="filter" value="Get">add filter</button>
+  <select id='filter-type'>
+    <option value="by domain"> by domain </option>
+    <option value="by date range"> by date </option>
+    <option value="by url pattern"> by url pattern </option>
+    <option value="by language"> by language </option>
+    <option value="keyword"> keyword </option>
+    <option value="remove boilerplate"> remove boilerplate </option>
+  </select>
   </div>
   <label> In what format would you like your output: </label><br />
   <select>
@@ -37,5 +38,5 @@
     <option> gexf </option>
   </select><br /><br />
   <br />
-  <input type="submit"> </input>
+  <button id="scriptify" value="Get">create script</button>
 </body>
