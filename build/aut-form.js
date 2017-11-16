@@ -59,7 +59,7 @@ class AutForm {
             "draggable": true });
         div.innerHTML = "<br />Filter by " + name + ": " + value;
         var button = div.appendChild(document.createElement('button'));
-        this.setAttributes(button, { "id": id,
+        this.setAttributes(button, { "id": id + 1,
             "class": "remove" });
         button.innerHTML = "X";
     }
@@ -122,7 +122,7 @@ class AutForm {
         let children = div.getElementsByClassName('remove');
         for (var i = 0; i < children.length; i++) {
             this.setAttributes(children[i], {
-                id: i,
+                id: i + 1,
                 class: 'remove'
             });
         }
