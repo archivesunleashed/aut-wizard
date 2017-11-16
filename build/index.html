@@ -3,6 +3,8 @@
   <script type="text/javascript"
   src="aut-form.js">
 </script>
+<script type="text/javascript" src="multirange.js"></script>
+<link rel="stylesheet" type="text/css" href="multirange.css" />
 </head>
 <body>
   <label> What would you like to collect: </label><br />
@@ -20,7 +22,7 @@
     <option> Collection C </option>
   </select>
   <br /><br />
-  <div id="filters">
+
   <button id="filter" value="Get">add filter</button>
   <select id='filter-type'>
     <option value="by domain"> by domain </option>
@@ -30,6 +32,8 @@
     <option value="keyword"> keyword </option>
     <option value="remove boilerplate"> remove boilerplate </option>
   </select>
+  <div id="filterform"></div>
+  <div id="filters">
   </div>
   <label> In what format would you like your output: </label><br />
   <select>
