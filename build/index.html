@@ -7,21 +7,23 @@
 <link rel="stylesheet" type="text/css" href="multirange.css" />
 </head>
 <body>
+  <div "error"> </div>
   <label> What would you like to collect: </label><br />
-  <select>
+  <select id="outputType">
     <option>plain text</option>
     <option>domain frequencies</option>
     <option>hyper-link network</option>
     <option>
   </select>
   <br /><br />
-  <label> What collections would you like to apply this to? </label><br />
-  <select>
-    <option> Collection A </option>
-    <option> Collection B </option>
-    <option> Collection C </option>
-  </select>
-  <br /><br />
+  <label> Would you also like them grouped by...</label><br />
+  <input id="includeDates" class="inc" type="checkbox">Dates</input><br />
+  <input id="includeDomains" class="inc" type="checkbox">Domains</input><br />
+  <input id="includeUrls" class="inc" type="checkbox">Urls (inside the text)</input><br />
+  <br />
+  <label> Insert the relative path to your files </label><br />
+  <input id="collectionPath" size="50"></input><br />
+  <br />
 
   <button id="filter" value="Get">add filter</button>
   <select id='filter-type'>
@@ -31,16 +33,20 @@
     <option value="by language"> by language </option>
     <option value="keyword"> keyword </option>
     <option value="remove boilerplate"> remove boilerplate </option>
-  </select>
-  <div id="filterform"></div>
-  <div id="filters">
-  </div>
+  </select><br />
+  <div id="filterform"></div><br />
+  <div id="filters"></div><br />
+  <form id="radios">
   <label> In what format would you like your output: </label><br />
-  <select>
-    <option> json </option>
-    <option> csv </option>
-    <option> gexf </option>
-  </select><br /><br />
+    <input id="screen_output" type="radio" name="output" value="screen" checked>Output to Screen</input>
+    <input id="file_output" type="radio" name="output" value="file">Output to TextFile</input>
+  </form>
+  <div id="output_text">
+    <label>Take this many:</label>
+    <input id="take_output" type="number" min=3 max=1000 value=10></input></div>
+  <button id="scriptify" value="Get">create script</button><br />
   <br />
-  <button id="scriptify" value="Get">create script</button>
+  <br />
+
+  <div id="outputText"></div>
 </body>
