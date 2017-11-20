@@ -256,7 +256,7 @@ class AutForm {
       return ""
     }
     else {
-      var script = "map (r => ("
+      var script = ".map (r => ("
       var arr = [];
         for (var i = 0; i < checks.length; i++) {
           if (checks[i].checked) {
