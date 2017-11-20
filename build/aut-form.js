@@ -183,14 +183,14 @@ class AutForm {
         elem.innerHTML = template;
     }
     cleanInput(text) {
-        return text.replace(/[\-\[\]\(\)\*\+\?\.\\\^\$\|]/g, "\\$&");
+        return text.replace(/[\-\[\]\(\)\+\?\\\^\$\|]/g, "\\$&");
     }
     prepareMap(checks) {
         if (checks == undefined) {
             return "";
         }
         else {
-            var script = "map (r => (";
+            var script = '.map (r => (';
             var arr = [];
             for (var i = 0; i < checks.length; i++) {
                 if (checks[i].checked) {
