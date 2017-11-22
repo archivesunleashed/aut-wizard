@@ -64,9 +64,12 @@ class AutForm {
       })
       document.querySelector('body').addEventListener('click', function(event) {
           var elem = (<Element>event.target);
+
           if (elem.className == 'remove') {
+            console.log(elem.id);
             here.removeFilter(elem.id);
           }
+
           switch (elem.id) {
             case  'filter' : {
               here.addFilterForm();
@@ -166,14 +169,14 @@ class AutForm {
     let div = filters.appendChild(document.createElement("div"));
     let id = filters.getElementsByClassName('remove').length
     this.setAttributes(div,
-      {"id": id+1,
+      {"id": id,
         "class": name+"Filter",
       "draggable": true});
     div.innerHTML = "Keep this " + name + ": ";
     div.appendChild(document.createElement('span')).innerHTML = value;
     var button = div.appendChild(document.createElement('button'));
     this.setAttributes(button,
-      {"id": id+1,
+      {"id": id,
       "class": "remove"});
     button.innerHTML = "X";
   }
@@ -236,7 +239,7 @@ class AutForm {
     let children = div.getElementsByClassName('remove');
     for (var i = 0; i < children.length; i++) {
       this.setAttributes((<HTMLElement>children[i]), {
-        id: i+1,
+        id: i,
         class: 'remove'
       });
     }
