@@ -124,21 +124,21 @@ class AutForm {
             case 'by domain': {
                 this.applyTemplate(`<div id="bydomain">
                             <input id="domaininput">Keep this domain</input>
-                            <button id="domain">apply</button>
+                            <button id="domain" class="btn btn-secondary">apply</button>
                             </div>`);
                 break;
             }
             case 'by date range': {
                 this.applyTemplate(`<div id="bydate">
                             <input id="dateinput">Enter a date (YYYY, YYYYMM or YYYYMMDD)</input>
-                          <button id="date"> apply</button>
+                          <button id="date" class="btn btn-secondary"> apply</button>
                         </div>`);
                 break;
             }
             case 'by url pattern': {
                 this.applyTemplate(`<div id="byurl">
                             <input id="urlinput">by url pattern </input>
-                            <button id="url">apply</button>
+                            <button id="url" class="btn btn-secondary">apply</button>
                             </div>`);
                 break;
             }
@@ -151,13 +151,13 @@ class AutForm {
                             <option value="ge">ge / Deutsche</option>
                             <option value="zh">zh / 中国</option>
                             </select>
-                            <button id="language">apply</button>
+                            <button id="language" class="btn btn-secondary">apply</button>
                             </div>`);
                 break;
             }
             case 'keyword': {
                 this.applyTemplate(`<div id="keywords"><input id="keywordinput" placeholder="enter keywords...">Keyword filter</input>
-                            <button id="keyword">apply</button></div>`);
+                            <button id="keyword" class="btn btn-secondary">apply</button></div>`);
                 break;
             }
             default: {
@@ -247,6 +247,7 @@ class AutForm {
         codediv.appendChild(elem);
         let copy = document.getElementById('outputText').appendChild(document.createElement('button'));
         copy.setAttribute('id', 'copy');
+        copy.setAttribute('class', 'btn btn-secondary');
         copy.innerHTML = "Copy code to clipboard";
         let inc = document.getElementsByClassName('inc');
         let output = document.getElementById('outputType');

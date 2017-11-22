@@ -5,29 +5,38 @@
   src="aut-form.js">
 </script>
 <script type="text/javascript" src="multirange.js"></script>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
 <meta charset="UTF-16"></meta>
 <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
 </head>
 <body>
-  <div "error"> </div>
-  <label> What would you like to collect: </label><br />
+
+  <div class="container">
+    <div id="intro" class="row">
+      <h4 class="display-4"> AUT Script Form </h2>
+    <div class="col-*-4">This form will produce a scala script based on the selection of filters.
+      You can copy the code to your clipboard and run it using :paste in the spark shell.</div>
+    </div>
+  <div id="error" class="row"> <br /></div>
+  <div class="row">
+  <div class="col-*-4">
+  <label> What would you like to collect? </label><br />
   <select id="outputType">
     <option>plain text</option>
     <option><i>script generator for networks coming soon...</i></option>
     <option>
   </select>
   <br /><br />
-  <label> Would you also like them grouped by...</label><br />
+  <label> Would you also like them grouped by...?</label><br />
   <input id="includeDates" class="inc" type="checkbox">Dates</input><br />
   <input id="includeDomains" class="inc" type="checkbox">Domains</input><br />
   <input id="includeUrls" class="inc" type="checkbox">Urls (inside the text)</input><br />
   <br />
-  <label> Insert the relative path to your files </label><br />
+  <label> Insert the relative path to your files: </label><br />
   <input id="collectionPath" size="50"></input><br />
   <br />
 
-  <button id="filter" value="Get">add filter</button>
+  <button id="filter" value="Get" class="btn btn-primary">add filter</button>
   <select id='filter-type'>
     <option value="by domain"> by domain </option>
     <option value="by date range"> by date </option>
@@ -39,16 +48,16 @@
   <div id="filterform"></div><br />
   <div id="filters"></div><br />
   <form id="radios">
-  <label> In what format would you like your output: </label><br />
+  <label> In what format would you like your output? </label><br />
     <input id="screen_output" type="radio" name="output" value="screen" checked>Output to Screen</input>
     <input id="file_output" type="radio" name="output" value="file">Output to TextFile</input>
   </form>
   <div id="output_text">
     <label>Take this many:</label>
     <input id="take_output" type="number" min=3 max=1000 value=10></input></div>
-  <button id="scriptify" value="Get">create script</button><br />
+  <button id="scriptify" value="Get" class="btn btn-primary">create script</button><br />
   <br />
   <br />
-
-  <div id="outputText"></div>
+</div>
+    <div id="outputText" class="col-*-4"></div></div>
 </body>
