@@ -141,7 +141,8 @@ class AutForm {
     this.clearForm("output_text");
     var fileform = document.getElementById('output_text');
     fileform.innerHTML= `<label>Enter the file path
-    for your output text.</label> <input id="take_output" size="50"> </input>`;
+    for your output text.</label>
+    <br /><input id="take_output" size="30"> </input>`;
 
   }
 
