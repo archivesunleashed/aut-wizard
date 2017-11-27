@@ -1,16 +1,16 @@
-# Archives Unleashed Toolkit Wizard
+# Archives Unleashed Toolkit (AUT) Wizard
 
-![screenshot of the Toolkit Wizard](https://user-images.githubusercontent.com/3834704/33250099-98fcf4d0-d2fc-11e7-8e7c-a0a165574dc3.png)
+![screenshot of the Toolkit Wizard](https://user-images.githubusercontent.com/3834704/33250450-94d0cef2-d2fe-11e7-8918-108290798b0e.png)
 
 This is a browser-based tool that can help you create scripts to use with the [Archives Unleashed Toolkit](http://archivesunleashed.org/aut/). Use checkboxes and text-entry to create well-formed Scala scripts that can unleash your web archives.
 
-To install, download this repository following this [link](https://github.com/archivesunleashed/auk-wizard/archive/master.zip), or you can use your command line to clone it like so:
+To install, download this repository following this [link](https://github.com/archivesunleashed/aut-wizard/archive/master.zip), or you can use your command line to clone it like so:
 
 ```
-git clone https://github.com/archivesunleashed/auk-wizard.git
+git clone https://github.com/archivesunleashed/aut-wizard.git
 ```
 
-To use the client, open your web browser, select "Open File," and select the file under `/auk-wizard/build/index.html`.
+To use the client, open your web browser, select "Open File," and select the file under `/aut-wizard/build/index.html`.
 
 ## Acknowledgments
 
