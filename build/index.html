@@ -13,13 +13,15 @@
 
   <div class="container">
     <div id="intro" class="row">
-      <h4 class="display-4"> AUT Script Form </h2>
-    <div class="col-*-4">This form will produce a scala script based on the selection of filters.
+      <div class="jumbotron">
+      <h4 class="display-4"> AUT Script Wizard </h2>
+    <div> This form will produce a scala script based on the selection of filters.
       You can copy the code to your clipboard and run it using :paste in the spark shell.</div>
     </div>
+  </div>
   <div id="error" class="row"> <br /></div>
   <div class="row">
-  <div class="col-*-8">
+  <div class="col-*-6">
   <label> What would you like to collect? </label><br />
   <select id="outputType">
     <option>plain text</option>
@@ -59,5 +61,7 @@
   <br />
   <br />
 </div>
-    <div id="outputText" class="col-*-4"></div></div>
+    <div class="col-*-1"></div>
+    <div id="outputText" class="card"><div class="card-body"></div></div>
+  </div>
 </body>
