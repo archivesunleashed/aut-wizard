@@ -1,6 +1,6 @@
 # Archives Unleashed Toolkit Wizard
 
-![screenshot of the Toolkit Wizard](https://raw.githubusercontent.com/archivesunleashed/auk-client/README-patch/screenshot.png?token=ADqDUMFnzHLPL52T-l1Y3L4qNp15lNoUks5aJLyrwA%3D%3D)
+![screenshot of the Toolkit Wizard](https://user-images.githubusercontent.com/3834704/33250099-98fcf4d0-d2fc-11e7-8e7c-a0a165574dc3.png)
 
 This is a browser-based tool that can help you create scripts to use with the [Archives Unleashed Toolkit](http://archivesunleashed.org/aut/). Use checkboxes and text-entry to create well-formed Scala scripts that can unleash your web archives.
 
